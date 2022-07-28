@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import {useNavigate } from "react-router-dom"
+import {useNavigate } from "react-router-dom";
+import image from "../../images/image1.webp"
+
 
 import './Login.css';
 
@@ -20,8 +22,12 @@ function Login() {
 		localStorage.setItem('auth', true)
 	};
   return (
-    <div className="form mt-5">
-      <h3 className='text-center'>Login</h3>
+   
+    <div className="form  bg" style={{
+      background: `url(${image})`,
+   
+    }}>
+      <h3 className='text-center mt-5'>Login</h3>
       <form className='form' onSubmit={Login}>
 							{errorMessage.length > 0 && <div style={{ marginBottom: '10px', color: 'red' }}>{errorMessage}</div>}
         <div class="form-group">

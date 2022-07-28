@@ -2,8 +2,18 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width:60%;
+    
+    width: 30%;
+    background-color: #08429885;
+    padding: 30px;
   }
+  .form>h3{
+    color: white;
+  }
+  .form-group>label{
+    color: white;
+  }
+
   .form-group{
     margin-top: 10px !important;
   }
@@ -12,4 +22,11 @@
     margin-left: auto;
     margin-right: auto;
     width:100%;
+  }
+  .bg{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
   }
